@@ -36,30 +36,30 @@ function seedDB(){
 		image: "https://lh3.googleusercontent.com/proxy/R_K8mvEmkAlY2tRbBfJAxEgDMCO85X4WXO2rgR0ZKgqBTcL-t1t2qT8bbgUvoOocSh3-4cPm49a_mrPs_oLOg2azNmpuEu1Ys6p10dVb1SlDMNHmX3O8",
 		description: "I love iphones"
 	}]
-	data.forEach(function(seed){
-		campground.create(seed, function(err, campground){
-			if (err){
-				console.log(err);
-			}
-			else {
-				console.log("camground added")
-				Comment.create(
-				{
-					text:"This is a nice comment huh no hate lol",
-					author: "Some bitch"
-				}, function(err, comment){
-					if (err){
-						console.log(err);
-					}
-					else {
-						campground.comments.push(comment);
-						campground.save();
-						console.log("comment created and added")
-					}
-				})
-			}
-		})
-	})
+	// data.forEach(function(seed){
+	// 	campground.create(seed, function(err, campground){
+	// 		if (err){
+	// 			console.log(err);
+	// 		}
+	// 		else {
+	// 			console.log("camground added")
+	// 			Comment.create(
+	// 			{
+	// 				text:"This is a nice comment huh no hate lol",
+	// 				author: "Some bitch"
+	// 			}, function(err, comment){
+	// 				if (err){
+	// 					console.log(err);
+	// 				}
+	// 				else {
+	// 					campground.comments.push(comment);
+	// 					campground.save();
+	// 					console.log("comment created and added")
+	// 				}
+	// 			})
+	// 		}
+	// 	})
+	// })
 
 }
 module.exports = seedDB;
