@@ -16,12 +16,10 @@
 
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    <ul class="navbar-nav mr-auto"></ul>
-	    <% if(!user) {%>
+	    
 	     <a class="nav-item" href="/login" tabindex="-1">Login</a>
 	     <a class="nav-item" href="/register" tabindex="-1">Sign Up</a>
-	    <%} else {%>
 	     <a class="nav-item" href="/logout" tabindex="-1">Log Out</a>
-	     <%}%>
 	    <form class="form-inline my-2 my-lg-0">
 	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 	      <button class="btn btn-danger my-2 my-sm-0" type="submit">Search</button>
