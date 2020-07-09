@@ -1,0 +1,66 @@
+html {
+	height: 100vh;
+}
+
+body {
+	background-image: url(https://images.unsplash.com/photo-1579547621309-5e57ab324182?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80); 
+	height: 85%;
+
+}
+
+.form-box {
+	margin:2% 32.5% 0 32.5%;
+	width: 35%;
+	text-align: center;
+	border-radius: 25px;
+	background: #E7D0F1;
+	background-size:500%;
+	height: 90%;
+}
+
+.form-box h1 {
+	color: #672183;
+}
+
+.form-box img {
+	margin-top: 5px;
+	width: 90px;
+}
+
+#btn {
+	border-radius: 20px;
+	background: linear-gradient(-45deg, #ee7752 ,#e73c7e,#23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: change 10s ease-in-out infinite;
+	padding: 1%;
+	margin-left: 2%;
+	color:white;
+	font-size: 1.4em;
+	border: 0;
+	width: 8em;
+	transition: background 500ms;
+}
+
+@keyframes change {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.form-box label {
+	font-size: 1.3rem;
+}
+
+.form-group {
+	width: 80%;
+	margin: 5% auto;
+	color: #672183;
+	font-family: Lato;
+	text-align: left;
+}

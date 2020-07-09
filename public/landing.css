@@ -10,52 +10,6 @@ body {
 	max-width: 100vw;
 }
 
-
-@keyframes change {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-/*////////////////////////////*/
-
-#nav-brand {
-	font-size: 2.9rem;
-	color: white;
-	font-family: Courgette;
-}
-
-#nav-brand:hover {
-	border-bottom: none;
-}
-
-nav a {
-	padding-top: 0;
-	font-size: 1.3rem;
-	color:#F0F3F4;
-	width: 8%;
-	font-family:Lato;
-	transition:  border 300ms;
-	text-align: center;
-}
-
-nav a:hover {
-	color: #F0F3F4;
-	text-decoration: none;
-	padding-bottom: 4px;
-	border-bottom: 4px solid #F1948A;
-}
-
-nav form{
-	margin-left: 2%;
-}
-
 .box {
 	display: flex;
 	flex-direction: row;
@@ -69,27 +23,6 @@ nav form{
 	color: white;
 	margin:10% 2% 2% 2%;
 	font-size: 6em;
-}
-
-#btn {
-	border-radius: 20px;
-	background: linear-gradient(-45deg, #ee7752 ,#e73c7e,#23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: change 10s ease-in-out infinite;
-	padding: 1%;
-	margin-left: 2%;
-	width: 25rem;
-	text-align: center;
-	color:white;
-	font-size: 1.4rem;
-	box-shadow: 2px 2px 1px 1px #aabbcc;
-	transition: background 500ms, box-shadow 500ms;
-}
-
-#btn:hover {
-	background: #9B59B6;
-	text-decoration: none;
-	box-shadow: none;
 }
 
 /*///////////RESPONSIVE DETAILS///////////*/
